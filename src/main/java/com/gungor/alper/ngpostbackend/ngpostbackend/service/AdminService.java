@@ -31,7 +31,7 @@ public class AdminService {
     private UserRepository userRepository;
 
     public AdminResponse getAdminResponse(){
-        AdminResponse adminResponse = new AdminResponse(getPostNumber(),getUserNumberByUserType());
+        AdminResponse adminResponse = new AdminResponse(getUserNumberByUserType(),getPostNumber());
         return adminResponse;
     }
 
